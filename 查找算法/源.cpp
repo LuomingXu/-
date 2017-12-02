@@ -80,60 +80,7 @@ bi_tree search_in_bi_tree(const bi_tree T, const type target)
 
 	return nullptr;
 }
-//
-//bi_tree left_search_in_bi_tree(const bi_tree T, const type target)
-//{
-//	if (T == nullptr)
-//		return nullptr;
-//	if (T->data < target)
-//		return T;
-//	auto left = left_search_in_bi_tree(T->lchild, target);
-//	if (left != nullptr && left->data < target)
-//		return left;
-//	auto right = left_search_in_bi_tree(T->rchild, target);
-//	if (right != nullptr && right->data < target)
-//		return right;
-//
-//	return nullptr;
-//}
-//bi_tree right_search_in_bi_tree(const bi_tree T, const type target)
-//{
-//	if (T == nullptr)
-//		return nullptr;
-//	if (T->data > target)
-//		return T;
-//	auto left = right_search_in_bi_tree(T->lchild, target);
-//	if (left != nullptr && left->data > target)
-//		return left;
-//	auto right = right_search_in_bi_tree(T->rchild, target);
-//	if (right != nullptr && right->data > target)
-//		return right;
-//
-//	return nullptr;
-//}
 
-//bool search_in_bi_tree(const bi_tree t, const type key, bi_tree f, bi_tree &p)
-//{
-//	if (t == nullptr)
-//	{
-//		p = f; return false;
-//	}
-//	if (t->data== key)
-//	{
-//		p = t; return true;
-//	}
-//	if (key < t->data)
-//		return search_in_bi_tree(t->lchild, key, t, p);
-//	else
-//		return search_in_bi_tree(t->rchild, key, t, p);
-//}
-//bool insert_in_bi_tree(bi_tree &t,type e)
-//{
-//	if (!search_in_bi_tree(t,e,nullptr,p))
-//	{
-//		
-//	}
-//}
 void pre_order_traverse(const bi_tree T)
 {
 	if (T == nullptr)
